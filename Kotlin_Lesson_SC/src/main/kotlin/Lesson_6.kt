@@ -1,5 +1,9 @@
 //Классы и объекты
 //см. Lesson_0
+//public
+//private
+//internal
+//protected
 
 class Lesson_6(var firstName: String = "Peter", var secondName: String = "Parker") {
 
