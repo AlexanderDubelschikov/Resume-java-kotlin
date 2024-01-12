@@ -63,7 +63,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="120dp"
         android:fontFamily="@font/inter"
-        android:text="Зарегестрироваться"
+        android:text="Зарегистрироваться"
         android:textColor="#fdfdfd"
         android:textSize="20sp" />
 
