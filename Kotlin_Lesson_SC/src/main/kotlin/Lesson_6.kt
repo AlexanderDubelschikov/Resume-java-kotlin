@@ -1,5 +1,5 @@
 //Классы и объекты
-//см. Lesson_0
+//см. Lesson_0_6
 //public
 //private
 //internal
