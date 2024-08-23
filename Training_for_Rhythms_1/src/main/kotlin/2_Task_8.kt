@@ -1,3 +1,5 @@
+//Попытка решить руками
+
 fun main(args: Array<String>)
 {
     var str = readLine()!!.split(" ")
@@ -6,7 +8,7 @@ fun main(args: Array<String>)
     for (i in 0 until str.size)
     {
         if(str[i]!="")
-        mass.add(str[i].toLong())
+            mass.add(str[i].toLong())
     }
 
     val (result1, result2, result3) = solve_8(mass)
@@ -20,18 +22,18 @@ fun solve_8(mass: MutableList<Long>):Triple<Long, Long, Long>
     var result2: Long
     var result3: Long
 
-    var min1: Long
-    var min2: Long
-    var max1 = mass[0]
-    var max2 = mass[1]
-    var max3 = mass[2]
+    var masshelp = listOf<Long>(mass[0], mass[1], mass[2])
+    var sortmass = mass.sorted()
+    /*for(i in 0 until mass.size)
+    {
+        println(sortmass[i])
+    }*/
+    var max1 = masshelp[0]
+    var max2 = masshelp[1]
+    var max3 = masshelp[2]
+    var min1 = max2
+    var min2 = max3
 
-    if (max1>max2) max1=max2.also { max2=max1 }
-    if (max2>max3) max2=max3.also { max3=max2 }
-    if (max1>max2) max1=max2.also { max2=max1 }
-
-    min2 = max3
-    min1 = max2
 
     for(i in 3 until mass.size)
     {
@@ -75,6 +77,4 @@ fun solve_8(mass: MutableList<Long>):Triple<Long, Long, Long>
 
     return Triple(result1, result2, result3)
 }
-
-
 
