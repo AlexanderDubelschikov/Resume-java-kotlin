@@ -89,7 +89,7 @@
         app:layout_constraintGuide_percent="0.5" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+        android:id="@+id/rcViewPaired"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="3dp"
@@ -122,8 +122,8 @@
         android:textColor="@color/white"
         android:textStyle="italic"
         app:layout_constraintBottom_toTopOf="@+id/cardView2"
-        app:layout_constraintEnd_toEndOf="@+id/recyclerView"
-        app:layout_constraintStart_toStartOf="@+id/recyclerView"
+        app:layout_constraintEnd_toEndOf="@+id/rcViewPaired"
+        app:layout_constraintStart_toStartOf="@+id/rcViewPaired"
         app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
     <TextView
