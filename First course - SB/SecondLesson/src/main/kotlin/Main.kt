@@ -86,4 +86,20 @@ fun main(args: Array<String>) {
 
     val replaceFirst = str.replaceFirst("l", "2")
     println(replaceFirst)
+
+    var nulNum: Int = 5
+    var nulNum2: Int? = null
+
+    var nonNullString = "Null is not good!"
+    var nullableString: String? = null
+
+    println(nullableString?.toUpperCase())
+
+    if (nullableString != null)
+        println(nullableString.toUpperCase())
+
+
+
+
+
 }
